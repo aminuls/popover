@@ -13,15 +13,19 @@
   <h1>Hello, world!</h1>
   <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus"
     data-bs-title="Message from Aminul"
-    data-bs-content="Hi Apu! you can write your content here... This section is in data-bs-content">It's a Message</a>
+    data-bs-content="Hi Apu! you can write your content here... This section is in data-bs-content and you must have to add a script section which is written in below">It's a Message</a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+  
+    <!-- You must have to add this code!  start!-->
   <script>
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
   </script>
+  <!-- end -->
+
 </body>
 
 </html>
